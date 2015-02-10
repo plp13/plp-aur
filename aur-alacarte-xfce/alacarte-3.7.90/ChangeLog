@@ -1,0 +1,683 @@
+374d20e (HEAD, master) Release 3.7.90
+M	NEWS
+M	configure.ac
+d7a8469 (origin/master, origin/HEAD) Updated Norwegian bokmål translation
+M	po/nb.po
+7abbf5f Updated Serbian translation
+M	po/sr.po
+M	po/sr@latin.po
+e76d7c6 Update French translation
+M	po/fr.po
+4663f28 MenuEditor: Fix error message on loading
+M	Alacarte/MenuEditor.py
+e3dd583 Updated slovak translation
+M	po/sk.po
+47883cd Updated Lithuanian translation
+M	po/lt.po
+9cdcbd4 Updated Czech translation
+M	po/cs.po
+2f2e0b0 Use GLib.Error for catching errors
+M	Alacarte/ItemEditor.py
+M	Alacarte/util.py
+92b9cc7 Updated Spanish translation
+M	po/es.po
+30a747e Updated Brazilian Portuguese translation
+M	po/pt_BR.po
+6dfec50 Fix a typo
+M	data/Makefile.am
+009ec01 Updated Slovenian translation
+M	po/sl.po
+a9cf43a Updated Hungarian translation
+M	po/hu.po
+d71b7b5 Updated Polish translation
+M	po/pl.po
+72ba83a Enforce the use of Gtk 3.0; Gtk 2.0 is no introspecatble and
+thus does not serve us anyway.
+M	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+M	Alacarte/util.py
+fde7f58 alacarte: Simplify the runner script
+M	Alacarte/MainWindow.py
+M	alacarte.in
+fc83511 ItemEditor: Refactor and deduplicate code
+M	Alacarte/ItemEditor.py
+75717fc ItemEditor: Make the dialog names the same
+M	Alacarte/ItemEditor.py
+M	data/directory-editor.ui
+M	data/launcher-editor.ui
+bf776b3 Make item editors modal on top of the main window
+M	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+b2ade7e MainWindow: Use the appropriate editor when right-clicking
+on items
+M	Alacarte/MainWindow.py
+fb569f0 ItemEditor: Make sure to set the Type field
+M	Alacarte/ItemEditor.py
+536c2c4 ItemEditor: Add a directory editor as well
+M	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+M	data/Makefile.am
+A	data/directory-editor.ui
+M	po/POTFILES.in
+41f6f97 ItemEditor: Refactor out some synchronization setters
+M	Alacarte/ItemEditor.py
+a1c4498 ItemEditor: Refactor out IconPicker UI
+M	Alacarte/ItemEditor.py
+93e78f9 ItemEditor: Make the name/exec fields required
+M	Alacarte/ItemEditor.py
+73321bd ItemEditor: Use an absolute path to the builder file
+M	Alacarte/ItemEditor.py
+3a3dc69 ItemEditor: Set the default focus correctly
+M	data/launcher-editor.ui
+c850f46 MainWindow: Use the new LauncherEditor for new files
+M	Alacarte/MainWindow.py
+8f2d7cd ItemEditor: Handle missing files better
+M	Alacarte/ItemEditor.py
+3c987dc MainWindow: Remove unused variables
+M	Alacarte/MainWindow.py
+968c81b Add our own custom launcher editor
+A	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+M	Alacarte/Makefile.am
+M	data/Makefile.am
+A	data/launcher-editor.ui
+M	po/POTFILES.in
+1443592 util: Fix fillKeyFile
+M	Alacarte/util.py
+23f0318 MainWindow: Make property editing work again
+M	Alacarte/MainWindow.py
+a3152fb alacarte.ui: Put back menu items
+M	data/alacarte.ui
+51034a4 alacarte.ui: Do a lot of rearranging
+M	data/alacarte.ui
+cfcea0b alacarte.ui: Line up and clean up widgets
+M	data/alacarte.ui
+0e52442 alacarte.ui: Clean up
+M	data/alacarte.ui
+5890bcd alacarte.ui: Use a GtkWindow
+M	data/alacarte.ui
+ed19984 MainWindow: Construct MenuEditor separately
+M	Alacarte/MainWindow.py
+M	alacarte.in
+55dfaed Clean up builder files
+M	data/alacarte.ui
+e65fd34 Allow specifying a menu basename other than applications.menu
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	alacarte.in
+075b8f0 alacarte.in: Fix indentation
+M	alacarte.in
+d3e706d Updated Hebrew translation.
+M	po/he.po
+2fb6667 Updated Hungarian translation
+M	po/hu.po
+147fbe4 Updated Brazilian Portuguese translation
+M	po/pt_BR.po
+eed3d62 Post-release version bump
+M	configure.ac
+eaedd3b (tag: 3.7.2) Release 3.7.2
+M	NEWS
+a920734 Pre-release version bump
+M	configure.ac
+10f611c Use with statements for management
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+f7835d7 Fix crashes when writing out files
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+d006c55 [l10n] Updated Estonian translation
+M	po/et.po
+fe7211f MenuEditor: deal with the case of having no $XDG_MENU_PREFIX
+M	Alacarte/MenuEditor.py
+7d62fd2 Release 3.6.1
+M	NEWS
+M	configure.ac
+1a15b19 Release as xz
+M	configure.ac
+a4db679 Respect $XDG_MENU_PREFIX when constructing the path to
+applications.menu
+M	Alacarte/MenuEditor.py
+2db5ad5 Updated Latvian translation
+M	po/lv.po
+c227d38 Updated Russian translation
+M	po/ru.po
+79ef85a Updated British English translation
+M	po/en_GB.po
+ffe6fec Finnish translation update by Jiri Grönroos
+M	po/fi.po
+bb76b0a Updated Polish translation
+M	po/pl.po
+9e7e490 Updated Czech translation
+M	po/cs.po
+f6eb2de Updated Norwegian bokmål translation
+M	po/nb.po
+53f55c5 Updated Galician translations
+M	po/gl.po
+afb208b Updated Slovenian translation
+M	po/sl.po
+d3caf31 Updated Serbian translation
+M	po/sr.po
+M	po/sr@latin.po
+ef08eab Post-release version bump
+M	configure.ac
+8d5cb97 (tag: 3.5.5) Release 3.5.5
+M	NEWS
+324f383 Updated Lithuanian translation
+M	po/lt.po
+de18704 Updated Galician translations
+M	po/gl.po
+36a6f9c Updated Galician translations
+M	po/gl.po
+9f18c39 Updated Polish translation
+M	po/pl.po
+8e7ff03 Updated Traditional Chinese translation(Hong Kong and Taiwan)
+M	po/zh_HK.po
+M	po/zh_TW.po
+92f3ab9 Updated Indonesian translation
+M	po/id.po
+87c756e MainWindow: Remove the code that triggers the revert dialog
+M	Alacarte/MainWindow.py
+a826370 Updated Spanish translation
+M	po/es.po
+c66e14b Updated Telugu Translation
+M	po/te.po
+09312a6 Post-release version bump
+M	configure.ac
+a5c8262 (tag: 3.5.4) Release 3.5.4
+M	NEWS
+6517d36 Rename the "Revert" button
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	data/alacarte.ui
+81ec64b MainWindow: Remove "Restore" menu item from Edit
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+01e81f1 ui: Remove the restore dialog
+M	data/alacarte.ui
+64ffa5a MenuEditor: Remove unused argument from loadItems
+M	Alacarte/MainWindow.py
+70ad086 Updated Indonesian translation
+M	po/id.po
+ac1eda4 Updated Brazilian Portuguese translation
+M	po/pt_BR.po
+1abe5e2 Updated Greek translation
+M	po/el.po
+8749c44 configure: We require gnome-menus 3.5.3
+M	configure.ac
+514e4bd Post-release bump
+M	configure.ac
+5cd2542 (tag: 3.5.3) Release 3.5.3
+M	NEWS
+M	configure.ac
+35d8300 Add myself to AUTHORS
+M	AUTHORS
+a8b35f0 MenuEditor: Clean up more code
+M	Alacarte/MenuEditor.py
+2d50f3c MenuEditor: Support separators
+M	Alacarte/MenuEditor.py
+7d1a28d MenuEditor: Remove unused code of moving menus/things between
+menus
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+37cc73d MenuEditor: Remove silly Layout class stuff
+M	Alacarte/MenuEditor.py
+ec72a8f MainWindow: Remove ugly hack
+M	Alacarte/MainWindow.py
+4df8c61 MainWindow: Remove on_style_set handler
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+2d476bd alacarte.ui: Remove silly last_modification_time attributes
+M	data/alacarte.ui
+6fc3486 alacarte.ui: Remove silly insignificant labels
+M	data/alacarte.ui
+45083e5 util: Don't fail when loading non-existant icon paths
+M	Alacarte/util.py
+6c6494d MenuEditor: Remove Menu object split
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+68c1527 MenuEditor: Remove visible_tree mess
+M	Alacarte/MenuEditor.py
+b2d5b8b Updated Telugu Translation
+M	po/te.po
+f3a41e1 MainWindow: Fix typos related to separators
+M	Alacarte/MainWindow.py
+f441b31 Updated Russian translation
+M	po/ru.po
+eeb1969 MenuEditor: Put back the top-level "Applications" menu
+M	Alacarte/MenuEditor.py
+e3cff4f MainWindow: Clean up imports
+M	Alacarte/MainWindow.py
+807e60c Updated Latvian translation
+M	po/lv.po
+2aa9b4f [l10n] Removed old translations
+M	po/ca@valencia.po
+c2fda12 [l10n]Updated Catalan (Valencian) translation
+M	po/ca@valencia.po
+57e1542 [l10n] Updated Catalan translation
+M	po/ca.po
+722aa11 Updated Galician translations
+M	po/gl.po
+b5b27e9 Updated French translation
+M	po/fr.po
+5df6c61 Updated German translation
+M	po/de.po
+8d0270f Updated Slovenian translation
+M	po/sl.po
+9c22f36 Updated Bulgarian translation
+M	po/bg.po
+1161c25 Updated Serbian translation
+M	po/sr@latin.po
+1fdc529 Updated Serbian translation
+M	po/sr.po
+4b81ce1 Remove old .cvsignore
+D	Alacarte/.cvsignore
+93e39e7 (tag: 0.13.4, gnome-3-4) Release 0.13.4
+M	NEWS
+d9d0312 MainWindow: Remove DND
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+c48e0f3 MainWindow: Refactor button sensitivity code a bit
+M	Alacarte/MainWindow.py
+a6c9ec4 Updated Polish translation
+M	po/pl.po
+9e70cb2 Updated Spanish translation
+M	po/es.po
+bcabaee MenuEditor: Fix creating submenus
+M	Alacarte/MenuEditor.py
+ec28d86 MainWindow: Refactor loadMenu
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+29dd205 MenuEditor: Remove some fancy usercustom thing
+M	Alacarte/MenuEditor.py
+311270a MenuEditor: Remove getMenu
+M	Alacarte/MenuEditor.py
+a825a8d Remove dumb explicit checks
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+91c7dc8 NainWindow: Refactor loadItems/loadMenu
+M	Alacarte/MainWindow.py
+M	Alacarte/util.py
+d342bb7 MenuEditor: Be resilient to bad XML
+M	Alacarte/MenuEditor.py
+94ef954 desktop: Change description of alacarte
+M	data/alacarte.desktop.in.in
+9fcdd5e MainWindow: Don't select the destination folder after a drop
+M	Alacarte/MainWindow.py
+2964038 Move revert item code close together
+M	Alacarte/MenuEditor.py
+39f2196 Remove Undo framework
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+76e90d5 Remove outdated icon files
+D	alacarte.png
+D	alacarte.svg
+ec7f1f6 .gitignore: Update
+M	.gitignore
+12da3cc Remove XML DOM duplicated code loading
+M	Alacarte/MenuEditor.py
+7dc27f3 Remove semicolon
+M	Alacarte/MenuEditor.py
+4f2698e Remove Python name mangling
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+a03feb7 Add "Utility" to Categories so that alacarte appears in the
+"Accessories" menu in fallback mode, instead of "Others".
+M	data/alacarte.desktop.in.in
+10a8044 util: avoid crashing if a .desktop file has no icon defined
+M	Alacarte/util.py
+b299638 MenuEditor: Fix silly typo
+M	Alacarte/MenuEditor.py
+a26cf48 Update .gitignore
+M	.gitignore
+244c6d0 MainWindow: treeview.get_selection() in cursor-changed callbacks
+can return None
+M	Alacarte/MainWindow.py
+b97f210 configure: Remove old pygtk/pygobject-2 checks
+M	configure.ac
+a56611b Post-release version bump
+M	configure.ac
+072620a (tag: 0.13.3) Release 0.13.3
+M	NEWS
+M	README
+b345e7e Add a .gitignore
+D	.cvsignore
+A	.gitignore
+c8f47ca Replace Travis with myself as a maintainer
+M	MAINTAINERS
+M	alacarte.doap
+210669f MenuEditor: Fix directory entry visibility
+M	Alacarte/MenuEditor.py
+d9955c9 MenuEditor: Refactor out Menu into its own class
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+75522c9 MenuEditor: undo and redo lists should not be global
+M	Alacarte/MenuEditor.py
+f20a288 MenuEditor: don't save on load
+M	Alacarte/MenuEditor.py
+3ac2272 MenuEditor: Punt removeWhitespaceNodes somewhere else
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+4a8a14f MenuEditor: Fix up XML writing
+M	Alacarte/MenuEditor.py
+08d0134 MenuEditor: Remove some old debugging stuff
+M	Alacarte/MenuEditor.py
+eb3ce9a MainWindow: Remove old hack for a broken gnome-panel binary
+M	Alacarte/MainWindow.py
+3fd3417 alacarte.in: Remove another bare except
+M	alacarte.in
+4218b99 MenuEditor: Fix visibility toggle switch
+M	Alacarte/MenuEditor.py
+cf0e9ba MenuEditor: Remove unused imports
+M	Alacarte/MenuEditor.py
+cb4f03b MenuEditor: Fix indentation, remove more print statements
+M	Alacarte/MenuEditor.py
+8dfed6e MenuEditor: Remove regex and dynamic property madness
+M	Alacarte/MenuEditor.py
+c6ccf40 MainWindow: work when deselecting things
+M	Alacarte/MainWindow.py
+1abad9c util: Use GLib for xdg basedir spec stuff
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+39add39 Use new-style classes, clean up
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	alacarte.in
+31aa00b MenuEditor: Scrap unused __deleteItem
+M	Alacarte/MenuEditor.py
+6dc0fa6 MainWindow: Fix drag/drop handlers
+M	Alacarte/MainWindow.py
+7e5915d util: Fix get_icon
+M	Alacarte/util.py
+704fe9a Remove print statements
+M	Alacarte/MainWindow.py
+59b2bf5 MainWindow: Fix popup
+M	Alacarte/MainWindow.py
+df21742 util: Replace our own DesktopParser with GKeyFile
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+9e760a4 MainWindow: Remove more bare excepts
+M	Alacarte/MainWindow.py
+2bd7e36 alacarte.ui: Remove GTK+2 things
+M	data/alacarte.ui
+bd188fd MainWindow: Remove timer shenanigans
+M	Alacarte/MainWindow.py
+90e605c MainWindow: Remove an unused variable
+M	Alacarte/MainWindow.py
+0edd578 MainWindow: Require a config
+M	Alacarte/MainWindow.py
+c62824c MainWindow: Fix imports
+M	Alacarte/MainWindow.py
+99f9338 Use spaces for indents
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+9c73115 util: Remove unused for_properties
+M	Alacarte/util.py
+ce1ee2b port to latest gmenu / introspection
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+M	configure.ac
+425a3b4 Added Bodo translation
+M	po/LINGUAS
+A	po/brx.po
+19a2455 Updated Bulgarian translation
+M	po/bg.po
+e31d30c Finnish translation update from
+http://l10n.laxstrom.name/wiki/Gnome_3.4 translation sprint
+M	po/fi.po
+b10d4e4 Added Swahili translation
+M	po/LINGUAS
+A	po/sw.po
+612ae56 [l10n] Updated Khmer translation
+M	po/km.po
+f3d68b2 Khmer translation added
+M	po/LINGUAS
+A	po/km.po
+157d06e Updated Norwegian bokmål translation
+M	po/nb.po
+bdc8651 Update Assamese translation
+M	po/as.po
+515813f Updated Japanese translation
+M	po/ja.po
+1cd4cb4 Don't need to column.clear_attributes if column was just
+constructed
+M	Alacarte/MainWindow.py
+1629b3b Fix crash TypeError: Expected Gtk.TreePath, but got StructMeta
+M	Alacarte/MainWindow.py
+a892965 Don't use fixed height mode
+M	Alacarte/MainWindow.py
+2d291f4 make moving items up/down work again
+M	Alacarte/MainWindow.py
+2bf8ed0 Partially fix drag-and-drop
+M	Alacarte/MainWindow.py
+1646c19 Fix crash in on_menu_tree_cursor_changed()
+M	Alacarte/MainWindow.py
+2c45f58 Add properties and a delete button
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+235f896 Don't enforce a minimum size of the main window
+M	data/alacarte.ui
+0f6a880 Fix several drag-and-drop usability issues
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+7c6a18c Fix erroneous selection handling below separator items
+M	Alacarte/MainWindow.py
+49cf1a2 Don't crash when a desktop has a / in the name
+M	Alacarte/MenuEditor.py
+8c33986 Fix Python error on startup with gnome-menus 2.91.6+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+3d4bbfd Avoid icons in buttons
+M	data/alacarte.ui
+4744a4e make undo work when deleting files
+M	Alacarte/MenuEditor.py
+b227c32 use startup notification
+M	data/alacarte.desktop.in.in
+eb48ea6 make drag-and-drop work again
+M	Alacarte/MainWindow.py
+248c91d Port to GTK3/pygi
+M	Alacarte/MainWindow.py
+M	Alacarte/util.py
+69cad9c New translation for Zulu (zu)
+M	po/LINGUAS
+A	po/zu.po
+7bcac66 Updated Belarusian translation.
+M	po/be.po
+3cd92ca Use AM_SILENT_RULES
+M	Alacarte/Makefile.am
+M	Makefile.am
+M	configure.ac
+8cffcac Don't use a hardcoded path in /tmp
+M	Alacarte/MainWindow.py
+14ac611 Updated Persian translation
+M	po/fa.po
+36d7060 Updated Esperanto translation
+M	po/eo.po
+5e2119a Added UG translation
+M	po/ug.po
+7e91f83 Reviewed Serbian Translation
+M	po/sr.po
+M	po/sr@latin.po
+16d3a21 Updated Polish translation
+M	po/pl.po
+703ffd2 Add 'af' translation to LINGUAS
+M	po/LINGUAS
+3f8c546 New Afrikaans (af) translation
+A	po/af.po
+329513d QA of Galician translations
+M	po/gl.po
+fbef651 Added UG translation
+M	po/ug.po
+7edf173 Updated Traditional Chinese translation(Hong Kong and Taiwan)
+M	po/zh_HK.po
+M	po/zh_TW.po
+abdbfdc Added UG translation
+M	po/ug.po
+809ba83 Added UG translation
+M	po/ug.po
+41f66e2 Added UG translation
+M	po/ug.po
+7f56a96 Updated Catalan (Valencian) translation
+M	po/ca@valencia.po
+84441ca Added Kikongo translation
+M	po/LINGUAS
+A	po/kg.po
+7537d28 Updated Japanese translation
+M	po/ja.po
+3c309f8 Post-release version bump
+M	configure.ac
+33f01dc (tag: 0.13.2) Release 0.13.2
+M	NEWS
+M	README
+7e722ca Updated Kazakh translation
+M	po/kk.po
+d462a2c Updated Indonesian translation
+M	po/id.po
+75741ab Make this build against python 2.7 also
+M	configure.ac
+80de86f Updated Turkish translation
+M	po/tr.po
+f85c54f Fixed headers in galician translation file
+M	po/gl.po
+76a21cd Updated Frisian translation and added it to the LINGUAS file
+M	po/LINGUAS
+A	po/fy.po
+45064dd Updated Kazakh translation for alacarte
+M	po/kk.po
+816a859 Updated Esperanto translation
+M	po/eo.po
+7825f7d Added Armenian translation - po file. Modified LINGUAG.
+M	po/LINGUAS
+A	po/hy.po
+d614e22 Updated Shavian transliteration
+M	po/en@shaw.po
+fd99492 updated breton translation
+M	po/br.po
+efa26e3 Added Aragonese translation
+M	po/LINGUAS
+A	po/an.po
+cdcfec0 Added UG translation
+M	po/ug.po
+d4dc392 Added UG translation
+M	po/LINGUAS
+3094dc9 Fix doap file
+M	alacarte.doap
+39172c2 Updated Slovenian translation
+M	po/sl.po
+0c8aa8a Post-release version bump.
+M	configure.ac
+bfa2e26 (tag: 0.13.1) Prepare for 0.13.1 release.
+M	NEWS
+M	README
+12ce243 Added UG translation
+M	po/ug.po
+c4446c4 Added UG translation
+A	po/ug.po
+924c7a3 Updated Bengali translation
+M	po/bn.po
+9cb9471 Updated Mongolian translation
+M	po/mn.po
+c0d3425 Updated Korean translation
+M	po/ko.po
+44e7b9f Add Malaj translation. Fixes bug 610933.
+M	po/LINGUAS
+A	po/ms.po
+b6ae338 Updated Polish translation
+M	po/pl.po
+9f3a36d Updated Galician Translation
+M	po/gl.po
+ab358e7 Update Romanian translation
+M	po/ro.po
+2e3f9d7 Shavian translation
+M	po/LINGUAS
+A	po/en@shaw.po
+b319a22 Fix initialization of i18n. Fixes bug #596098
+M	Alacarte/MainWindow.py
+05dfdd9 Start 0.13 development version.
+M	configure.ac
+0daf1d6 (tag: ALACARTE_0_12_4) Prepare for 0.12.4 release.
+M	NEWS
+657ab0f Updated German translation
+M	po/nds.po
+34dfdca Updated Kurdish translation
+M	po/ku.po
+e5c70d1 maithili added
+M	po/LINGUAS
+A	po/mai.po
+39ae6cb hindi update by Rajesh Ranjan
+M	po/hi.po
+d76145d Post release version bump
+M	README
+M	configure.ac
+25e5ae1 (tag: ALACARTE_0_12_3) Update NEWS for 0.12.3
+M	NEWS
+3554a17 Set the translation domain to GtkBuilder
+M	Alacarte/MainWindow.py
+M	Alacarte/Makefile.am
+M	Alacarte/config.py.in
+2cb4530 Post release version bump
+M	README
+M	configure.ac
+e660ce7 (tag: ALACARTE_0_12_2) Update NEWS and README for 0.12.2
+M	NEWS
+M	README
+8f40679 Generate config.h
+M	configure.ac
+1a21a0a Use display name instead of name for menu items
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	configure.ac
+e8d0dad Updated Brazilian Portuguese mailing list address.
+M	po/pt_BR.po
+dff9e79 Remove obsolete nds_NFE translation
+D	po/nds_NFE.po
+1620c40 Change nds_NFE to nds as discussed on irc
+M	po/LINGUAS
+A	po/nds.po
+a126e86 Updated breton translation
+A	po/br.po
+2dab422 Added br in LINGUAS file
+M	po/LINGUAS
+41898e1 Added Low German translation
+M	po/LINGUAS
+A	po/nds_NFE.po
+96127ca Remove obsolete Encoding key from desktop file
+M	data/alacarte.desktop.in.in
+3ae66dd Added Catalan (Valencian) translation
+M	po/LINGUAS
+A	po/ca@valencia.po
+12086bd Added Welsh (cy) translation.
+M	po/LINGUAS
+A	po/cy.po
+c7405b2 Updated Bengali translation
+M	po/bn.po
+a4f373d Updated Spanish translation
+M	po/es.po
+219a6a3 Updated Swedish translation
+M	po/sv.po
+f047b36 po/vi.po: updated Vietnamese translation
+M	po/vi.po
+8638504 po/vi.po: updated Vietnamese translation
+M	po/vi.po
+c341fcc post release bump to 0.12.2
+M	configure.ac
+64964e5 (tag: ALACARTE_0_12_1) Forgot to update NEWS and README
+M	NEWS
+M	README
+e794fef post release bump to 0.12.1
+M	configure.ac
+7dffab1 (tag: ALACARTE_0_12_0) Remove the ChangeLog file in distclean
+M	Makefile.am
+6f31ba0 Drop libglade dependency
+M	Alacarte/MainWindow.py
+M	data/Makefile.am
+D	data/alacarte.glade
+A	data/alacarte.ui
+M	po/POTFILES.in
+156cd7f Generate the ChangeLog from git log
+R100	ChangeLog	ChangeLog.pre-git
+M	Makefile.am
+a4a5e46 Bump to 0.12.0
+M	configure.ac

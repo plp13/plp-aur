@@ -1,0 +1,75 @@
+#!/bin/zsh
+# THEA BACKUP SCRIPTS
+# 
+# Make a backup
+# Exit codes:
+# 0	Backup completed successfully
+# 1	Could not mount backup volume
+# 2	Backup command failed
+# 3	Could not unmount backup volume
+# 9	Could not parse arguments
+
+source /usr/share/thea/config
+source /usr/share/thea/functions
+
+function usage()
+{
+	usage_pre
+	echof "Make a backup" "heading"
+	echof "Usage: thea-backup [options] [postact]" "info"
+	echof "If postact is 'andsleep', the computer will be suspended after backing up" "info"
+	echof "If postact is 'andpoweroff', the computer will be powered off" "info"
+	echof "If postact is 'andpause', the user will be prompted to press ENTER to exit" "info"
+	usage_post
+	exit 9
+}
+
+echof_date=0
+echof_silent=0
+echof_color=1
+
+maybe_disable_color
+parseargs ${0} ${@}
+
+set_term_title "Backup"
+
+if [ "."${1} = ".andsleep" ]
+then
+	echof "Note: once backup is completed, the computer will be suspended" "heading"
+
+elif [ "."${1} = ".andpoweroff" ]
+then
+	echof "Note: once backup is completed, the computer will be shut down" "heading"
+fi
+
+echof_date=1
+
+echof "Starting backup" "info"
+
+do_mount
+if [[ $? -ne 0 && $? -ne 2 ]]
+then
+	post_backup_action "${params[1]}"
+	exit 1
+fi
+
+do_backup_pre_cmd
+
+do_backup
+if [ $? -ne 0 ]
+then
+	post_backup_action "${params[1]}"
+	exit 2
+fi
+
+do_backup_post_cmd
+
+do_umount
+if [ $? -ne 0 ]
+then
+	post_backup_action "${params[1]}"
+	exit 3 
+fi
+
+post_backup_action "${params[1]}"
+exit 0

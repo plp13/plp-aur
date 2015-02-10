@@ -1,0 +1,37 @@
+# previous theme for SLiM
+# Author: Simone Rota
+
+# Messages (ie: shutdown)
+msg_color               #FFFFFF
+msg_font                Verdana:size=16:bold
+msg_x                   50%
+msg_y                   40%
+
+# valid values: stretch, tile
+background_style        tile
+background_color	#0066cc
+
+# Input controls
+input_panel_x           50%
+input_panel_y           45%
+input_name_x            118
+input_name_y            111
+input_font          	Tahoma:size=10
+input_bgcolor           #FFFFFF
+input_fgcolor           #000000
+
+# Username / password request
+username_font          	Tahoma:size=10:bold
+username_color        	#000000
+username_x              11
+username_y              111
+password_x              11
+password_y              111
+username_msg            Username:
+password_msg            Password:
+
+welcome_x		90
+welcome_y		50
+welcome_font            Tahoma:size=16:bold
+welcome_color		#000000
+

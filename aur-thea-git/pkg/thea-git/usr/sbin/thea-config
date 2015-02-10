@@ -1,0 +1,32 @@
+#!/bin/zsh
+# THEA BACKUP SCRIPTS
+# 
+# Configure rsnapshot for use with Thea
+# Exit codes:
+# 0	Configuration file written successfully
+# 1	Unable to move the original config file to a safe location
+# 2	Unable to write to the config file
+# 9	Could not parse arguments
+
+source /usr/share/thea/config
+source /usr/share/thea/functions
+
+function usage()
+{
+	usage_pre
+	echof "Configure rsnapshot for use with Thea" "heading"
+	echof "Usage: thea-config [options]" "info"
+	usage_post
+	exit 9
+}
+
+echof_date=0
+echof_silent=0
+echof_color=1
+
+maybe_disable_color
+parseargs ${0} ${@}
+
+do_config
+
+exit $?

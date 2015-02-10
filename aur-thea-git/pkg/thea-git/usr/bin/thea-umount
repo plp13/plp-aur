@@ -1,0 +1,32 @@
+#!/bin/zsh
+# THEA BACKUP SCRIPTS
+# 
+# Unmount the backup volume
+# Exit codes:
+# 0	Backup volume has been mounted
+# 1	Unable to mount backup volume
+# 2	Backup volume is already mounted
+# 9	Could not parse arguments
+
+source /usr/share/thea/config
+source /usr/share/thea/functions
+
+function usage()
+{
+	usage_pre
+	echof "Unmount the backup volume" "heading"
+	echof "Usage: thea-umount [options]" "info"
+	usage_post
+	exit 9
+}
+
+echof_date=0
+echof_silent=0
+echof_color=1
+
+maybe_disable_color
+parseargs ${0} ${@}
+
+do_umount
+
+exit $?

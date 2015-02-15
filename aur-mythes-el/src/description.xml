@@ -5,7 +5,7 @@
         It will also be used to automatically check if there are updates for this
         extension available. Newer versions should have higher values.
     -->
-    <version value="2014.10.15" />
+    <version value="2015.02.15" />
 
     <!--A unique identifier for your extension.
         In order to avoid name clashes with other extensions it should probably hold

@@ -1,7 +1,0 @@
-	../Alacarte/MainWindow.py \
-	../Alacarte/MenuEditor.py \
-	../Alacarte/ItemEditor.py \
-	../data/alacarte.desktop.in.in \
-	../data/alacarte.ui \
-	../data/launcher-editor.ui \
-	../data/directory-editor.ui

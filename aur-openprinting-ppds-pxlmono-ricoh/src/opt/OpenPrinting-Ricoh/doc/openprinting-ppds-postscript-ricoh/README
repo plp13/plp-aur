@@ -1,8 +1,0 @@
-PPD files for Ricoh's PostScript printers, supplied by Ricoh
-
-This package is automatically created from the PPD files which are
-assigned to the "Postscript-Ricoh" driver entry in the OpenPrinting
-database. The PPDs can also be downloaded as single files, but with
-the packaged file all advantages of the package managers of the
-distros can be made use of: Clean uninstallation, automatic updates,
-...
